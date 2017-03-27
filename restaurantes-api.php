@@ -4,7 +4,7 @@ require_once 'vendor/autoload.php';
 
 $app = new \Slim\Slim();
 
-$db = new mysqli("localhost", "root", "", "webapp");
+$db = new mysqli("localhost", "root", "", "api_restaurante");
 
 $app->get("/restaurantes", function() use($db, $app) {
 	// sleep(3);
